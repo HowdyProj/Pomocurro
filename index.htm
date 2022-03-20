@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>🍅 Pomocurro</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/0c0107de19.js" crossorigin="anonymous"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <style>
+    body {
+      font-family: "Segoe UI Symbol";
+      padding: 10px 10px 10px 10px;
+    }
+    a {
+      text-decoration: none;
+      color: aqua;
+      font-size: 14px;
+    }
+    a:hover {
+      text-decoration: none;
+      color: pink;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body class="bg-danger text-white">
+  <div class="jumbotron bg-dark text-white" style="padding: 5px 5px 5px 5px; margin-bottom: 10px;">
+    <span style="color: aquamarine;">🍅</span> <b>Pomocurro <span class="badge badge-warning">LITE</span></b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<small>Pomodoro. Simplified.</small><br>
+    <a href="#task">Input task name for registration</a><br>
+    <a href="#40-min">Choose a Pomodoro</a><br>
+    <a href="#start">Farm it!</a><br>
+  </div>
+  <b>Current task:</b>
+  <input type="text" class="form-control" id="task" placeholder="What will you do today?"><br>
+  <button class="btn btn-warning" id="60-min">🎇 Farm a crazy pomocurro (60 min)</button>
+  <button class="btn btn-success" id="40-min">✨ Farm a pomocurro (40 min)</button>
+  <button class="btn btn-primary" id="10-min">💧 Water a pomocurro (10 min) <span class="badge badge-secondary">Rest</span></button>
+  <div class="alert alert-success" role="alert" style="text-align: center">
+    <b id="mode" class="text-success">✨ Farming a normal Pomocurro</b><br>
+    <b>Pomocurro #<span id="id">1</span></b><br><b id="min" class="display-4">40</b> : <b id="sec" class="display-4">00</b><br>
+    <button class="btn btn-primary" id="start">Begin the Pomocurro</button>
+    <button class="btn btn-danger" id="end" disabled="true">Pause the Pomocurro</button>
+    <br> <small>After you start, there's no regrets!</small>
+  </div>
+  <h1>Statistics</h1>
+  <table class="table bg-white table-bordered">
+    <tbody>
+      <tr>
+        <td class="bg-success text-white"><b>Pomocurro Harvests</b></td>
+        <td><span id="harvests">0</span> pomocurros</td>
+      </tr>
+      <tr>
+        <td class="bg-warning text-dark"><b>Pomocurro Cost</b></td>
+        <td><span id="cost">0</span> seconds</td>
+      </tr>
+    </tbody>
+  </table>
+  You have done the following:
+  <ol id="done">
+    
+  </ol>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
