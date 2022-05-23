@@ -12,7 +12,7 @@ document.getElementById("60-min").addEventListener("click", function() {
     document.getElementById("mode").innerHTML = "🎇 Farming a crazy Pomocurro"
 })
 document.getElementById("40-min").addEventListener("click", function() {
-    document.getElementById("min").innerHTML = "00";
+    document.getElementById("min").innerHTML = "40";
     document.getElementById("sec").innerHTML = "00";
     count = true;
     document.getElementById("mode").innerHTML = "✨ Farming a normal Pomocurro"
